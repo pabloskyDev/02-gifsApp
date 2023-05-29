@@ -1,4 +1,4 @@
 <div class="card mb-2 text-center bg-dark">
-  <custom-gif-card-img [gif]="gif"></custom-gif-card-img>
+  <shared-lazy-image [url]="gif.images.downsized_medium.url" [alt]="gif.title || 'No name'"></shared-lazy-image>
   <custom-gif-card-body [gif]="gif"></custom-gif-card-body>
 </div>
