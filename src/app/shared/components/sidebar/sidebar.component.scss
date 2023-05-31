@@ -1,0 +1,9 @@
+.sidebar {
+  height: 100%;
+  min-height: 100vh;
+  min-width: var(--sidebar-width);
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  border-right: 2px solid rgb(36, 82, 231);
+}

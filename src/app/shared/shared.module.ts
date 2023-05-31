@@ -3,20 +3,25 @@ import { CommonModule } from '@angular/common';
 
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LazyImageComponent } from './components/lazy-image/lazy-image.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
   declarations: [
     SidebarComponent,
-    LazyImageComponent
+    LazyImageComponent,
+    NavigationComponent
   ],
   imports: [
     CommonModule,
+    RouterModule
   ],
   exports: [
+    CommonModule,
     SidebarComponent,
     LazyImageComponent,
-    CommonModule
+    NavigationComponent
   ]
 })
 export class SharedModule { }
